@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 475px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0px 30px 60px lightgray;
+} 
+
+.results {
+    background: linear-gradient(to top, hsl(241, 81%, 52%) 0%, hsl(241, 81%, 60%)40%, hsl(241, 81%, 62%) 100%);
+    width: 350px;
+    border-radius: 20px;
+}
+
+.results-info {
+    margin: 20px;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.results-info h5 {
+    font-size: 23px;
+    margin: 30px 0px;
+    color: hsl(221, 100%, 98%);
+    opacity: 0.6;
+}
+
+#total-marks {
+    color: hsl(252, 100%, 80%);
+}
+
+.marks-obtained-circle {
+    background: linear-gradient(to bottom, hsl(241, 81%, 40%)  0%, hsl(241, 81%, 55%)70%, hsl(241, 81%, 60%) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    background-color: hsl(241, 81%, 54%);
+}
+
+#marks-obtained {
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+    margin: 0 auto;
+}
+
+.results-info h4 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+.result-description {
+    color: hsl(221, 100%, 86%);
+    opacity: 0.8;
+    word-spacing: 2px;
+}
+
+
+.summary {
+    width: 350px;
+}
+
+.summary-info {
+    margin: 30px;
+}
+
+.summary-heading {
+    font-size: 23px;
+    margin: 30px 0;
+    margin-left: 13px;
+    color: hsl(224, 30%, 27%)
+}
+
+.marks-categary {
+    display: flex;
+    padding: 15px;
+    margin: 10px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#reaction {
+    background-color: hsl(0, 100%, 97%);
+    color: hsl(0, 100%, 50%);
+    border-radius: 8px;
+}
+
+#memory {
+    background-color: hsl(39, 100%, 97%);
+    color: hsl(39, 100%, 50%);;
+    border-radius: 8px;
+}
+
+#verbal {
+    background-color: hsl(166, 100%, 90%);
+    color: hsl(166, 100%, 40%);;
+    border-radius: 8px;
+}
+
+#visual {
+    background-color: hsl(234, 85%, 97%);
+    color: hsl(234, 85%, 50%);
+    border-radius: 8px;
+}
+
+.subject-name {
+    margin-left: -80px;
+}
+
+.marks-scored-subject-wise {
+    color: hsl(224, 30%, 27%);
+    font-weight: 600;
+}
+
+.subject-wise-marks-container {
+    text-align: center;
+}
+
+.out-of-subject-wise {
+    color: hsl(224, 30%, 65%);
+}
+
+#reaction .subject-name {
+    background-color: hsl(0, 100%, 97%);
+}
+
+.btn {
+    width: 90%;
+    font-size: 13px;
+    padding: 15px;
+    border: none;
+    border-radius: 40px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.4s ease ;
+}
+
+.btn:hover { 
+    background-color: hsl(252, 100%, 67%);
+}
+
+@media (max-width: 720px) {
+    .card {
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+        margin: auto;
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px;
+    }
+    
+    .results {
+        width: 100vw;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .summary {
+        width: 100vw;
+    }
+
+    .result-description {
+        margin-bottom: 50px;
+    }
+
+    .btn {
+        width: 90%;
+        height: 45px;
+        margin: 10px 0px;
+        margin-top: 25px;
+        border: none;
+        border-radius: 40px;
+        background-color: hsl(224, 30%, 27%);
+        color: white;
+        font-weight: 600;
+    }
+
+}
+
